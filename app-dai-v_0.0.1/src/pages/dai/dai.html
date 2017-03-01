@@ -1,0 +1,41 @@
+<ion-header>
+  	<ion-navbar>
+	    <button ion-button menuToggle>
+	      	<ion-icon name="menu"></ion-icon>
+	    </button>
+    	<ion-title>DAI</ion-title>
+  	</ion-navbar>
+</ion-header>
+
+<ion-content padding class="tutorial-page">
+
+	<!--CRIAÇÃO DO BOTÃO MAIS	-->
+  <ion-fab bottom right>
+    <button ion-fab>
+      <ion-icon name="add"></ion-icon>
+    </button>
+    <ion-fab-list side="top">
+	  <button ion-fab>
+			<ion-icon color="corPadrao" name="md-information-circle"></ion-icon>
+			<div class="label">Sobre</div>
+		</button>
+		<button ion-fab>
+			<ion-icon color="corPadrao" name="md-search"></ion-icon>
+			<div class="label">Pesquisar</div>
+		</button>
+		<button ion-fab>
+			<ion-icon color="corPadrao" name="md-settings"></ion-icon>
+			<div class="label">Configurações</div>
+		</button>
+    </ion-fab-list>
+  </ion-fab>
+
+  	<ion-slides pager class="slidesTops">
+	    <ion-slide *ngFor="let slide of slides">
+		    <img [src]="slide.image" class="slide-image"/>
+		    <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+		    <p [innerHTML]="slide.description"></p>
+	    </ion-slide>
+  	</ion-slides>
+  	<hr/>
+</ion-content>

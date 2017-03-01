@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Sistema de Login Aplicativo DAI-UFT</title>
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/login.css">
+        <script src="js/login.ts"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+		<script>
+		  var config = {
+		    apiKey: "AIzaSyCT5QhqGe8tXBhcCwXE27VUoWyngERdJYM",
+		    authDomain: "appdai-beta.firebaseapp.com",
+		    databaseURL: "https://appdai-beta.firebaseio.com",
+		    storageBucket: "appdai-beta.appspot.com",
+		    messagingSenderId: "562100545330"
+		  };
+		  firebase.initializeApp(config);
+		</script>
+	</head>
+	<body>     
+        <div class="fundo">
+            <div class="mdl-layout mdl-js-layout mdl-color--grey-100">
+                <main class="mdl-layout__content">
+                    <div class="mdl-card mdl-shadow--6dp">
+                        <div class="tobar">
+                            <img class="logoLogin" src="img/logoBlackWhite.png"/>
+                            <h2 class="textoNome">APP DAI-UFT</h2>
+                        </div>
+                    <div class="mdl-card__supporting-text">
+                            <form action="#">
+                                <div class="mdl-textfield mdl-js-textfield">
+                                    <input class="mdl-textfield__input" type="text" id="username" />
+                                    <label class="mdl-textfield__label" for="username">Usuário...</label>
+                                </div>
+                                <div class="mdl-textfield mdl-js-textfield">
+                                    <input class="mdl-textfield__input" type="password" id="userpass" />
+                                    <label class="mdl-textfield__label" for="userpass">Senha...</label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a href="index.html">
+                                <button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"> Acessar</button>
+                            </a>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+	</body>
+</html>

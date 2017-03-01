@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Diretoria de Assuntos Internacionais</title>
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <script src="js/function.js"></script>
+	</head>
+	<body>
+		<div class="topBar">
+			<br/>
+			<img class="imgTopBar" src="img/logoBlackWhite.png">
+			<h1 class="nomeTexto">Diretoria de Assuntos Internacionais</h1>
+			<br/>
+			<!--
+			<button class="btnAdd"><i class="fa fa-plus" aria-hidden="true"></i>Adiconar uma notícia</button>
+			-->	
+		</div>
+		<div>
+			<p class="descricaoTextoNoticia">
+				Todas as informações que serão escrita nas caixas de textos serão encaminhadas diretamente para o servidor de hospedagem de arquivos do aplicativo DAI, portanto antes de enviar verifique cuidadosamente todos os dados. Porém, caso envie, e queira corrigir depois é só clicar no botão editar notícias.
+			</p>
+		</div>
+		<section class="formularioNotica">
+			<form action="/cadastro/" method="post">
+
+				<h1 class="formato">Título da Notícia</h1>
+				<input class="TituloNoticia" required="required" type="text" name="titulo" placeholder="Escreva aqui o título da notícia"/>
+				
+				<h1 class="formato">Descrição da Notícia</h1>				
+				<textarea class="descricaoNoticia" required="required" value="descricao" type="text" name="descricao" placeholder="Escreva aqui a descrição da notícia"></textarea> <br>
+				
+				<h1 class="formato">Imagem que irá com a notícia</h1>
+				<input class="btnArquivo" required="required" type="file" name="arquivos"  accept="image/png, image/jpeg" multiple/>
+				<br/>
+				<br/>
+				<button class="botao">Submeter Notícia</button>
+			</form>
+		</section>
+		<br/>
+	</body>
+</html>

@@ -1,0 +1,173 @@
+	@charset "UTF-8";
+	@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+	body{
+		background-color: white;
+		margin: 0px;
+		padding: 0px;
+		font-family: 'Roboto', sans-serif;
+	}
+
+	a{
+		text-decoration: none;
+	}
+
+	img{
+		max-width: 100%;
+	}
+
+	.topBar{
+		background-color: #0D47A1;
+		margin: 0;
+	}
+
+	.imgTopBar{
+		display: block;
+		position: relative;
+		margin: 0 auto;
+		width: 25%;
+		height: 25%;
+	}
+
+	.nomeTexto{
+		font-size: 1em;
+		text-align: center;
+		color: white;
+		font-weight: bolder; 
+	}
+
+	.btnAdd{
+		width: 20%;
+		height: 20%;
+		font-size: 1.3em;
+		text-align: center;
+	}
+
+	.formularioNotica{
+		text-align: center;
+		font-family: 'Roboto', sans-serif;
+	}
+	.formato{
+		font-size: 1.2em;
+		color: black;
+		text-align: center;
+		font-weight: bolder;
+	}
+
+	.TituloNoticia{
+		margin: 5%;
+		min-height:auto;
+		width: 280px;
+		height: 50px;
+		font-size: 1em;
+		font-style: italic;
+		background-color: #f5f5f5;
+		border: none;
+		border-bottom: solid gray 1px;
+		outline: none;
+		font-family: 'Roboto', sans-serif;
+	}
+
+	.descricaoNoticia{
+		margin: 5%;
+		min-height: auto;
+		font-size: 1em;
+		font-style: italic;
+		background-color: #f5f5f5;
+		width: 280px;
+		height: 100px;
+		border: none;
+		border-bottom: solid gray 1px;
+		outline: none;
+		font-family: 'Roboto', sans-serif;
+	}
+
+	.descricaoTextoNoticia{
+		margin: 5%;
+		font-size: 1em;
+		text-align: center;
+		color: gray;
+	}
+
+	.btnArquivo{
+		font-size: 1em;
+		font-family: 'Roboto', sans-serif;
+	}
+
+	.botao{
+		display: inline-block;
+		background-color: blue;
+		color: white;
+		padding: 10px 20px;
+		text-decoration: none;
+		box-sizing: border-box;
+		font-size: 1em;
+		font-family: 'Roboto', sans-serif;
+		border: 0px;
+	}
+
+	.botao:hover{
+		background-color: #ccc;
+		border-radius: 2px;
+		color: black;
+
+	}
+	
+	/*========== MOBILE FIRST ==========*/
+	/*SMALL DEVICES - SMARTPHONES*/
+	@media screen and (min-width: 480px){
+		.TituloNoticia{
+			width: 400px;
+		}
+
+		.descricaoNoticia{
+			width: 400px;
+		}
+	}
+
+	/*SMALL DEVICES - TABLETS*/
+	@media screen and (min-width: 768px){
+		.TituloNoticia{
+			width: 700px;
+			margin-bottom: 0;
+			margin-top: 0;
+		}
+
+		.descricaoNoticia{
+			width: 700px;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	}
+
+	/*MEDIUM DEVICES - TABLETS & DESKTOPS*/
+	@media screen and (min-width: 960px){
+		.imgTopBar{
+			display: block;
+			position: relative;
+			margin: 0 auto;
+			width: 5%;
+			height: 5%;
+		}
+
+		.nomeTexto{
+			font-size: 0em;
+		}
+
+		.TituloNoticia{
+			width: 900px;
+			margin-bottom: 0;
+			margin-top: 0;
+		}
+
+		.descricaoNoticia{
+			width: 900px;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	}
+
+	/*LARGE DEVICES - WIDE SCREENS*/
+	@media screen and (min-width: 1024px){
+		
+	}

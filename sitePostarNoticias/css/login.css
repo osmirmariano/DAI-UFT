@@ -1,0 +1,43 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color:  red;
+}
+
+
+.mdl-layout {
+	align-items: center;
+    justify-content: center;
+}
+.mdl-layout__content {
+	padding: 24px;
+	flex: none;
+}
+.logoLogin{
+    padding: 5%;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    height: 30%;
+}
+
+.textoNome{
+    margin-top: -5%;
+    font-size: 1.6em;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+}
+
+.tobar{
+    background-color: #0D47A1;
+}
+
+a{
+    text-decoration: none;
+    color: #0D47A1;
+}
